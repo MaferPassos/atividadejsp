@@ -1,0 +1,17 @@
+plugins {
+    id 'war'
+    id 'org.gretty' version "4.0.3"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.classfish.web:jakarta.servlet.jsp.jstl:3.0.1'
+    implementation 'jakarta.servlet.jsp.lstl:jakarta.servlet.jsp.jstl-api:3.0.2'
+}
+
+gertty {
+    contextPath = "/"
+}
